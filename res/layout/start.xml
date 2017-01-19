@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+     
+        <ImageButton
+            android:id="@+id/hilfe"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:src="@drawable/info_button"
+            android:layout_marginTop="10dip"  
+       		android:layout_marginRight="10dip"
+       		 />
+      
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:orientation="horizontal"      
+       android:paddingTop="25dp" >
+       
+       <ImageButton
+           android:id="@+id/beatblitz_bild"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"    
+           android:background="@drawable/round_button"    
+           android:layout_toLeftOf="@+id/centerPoint"      
+           android:src="@drawable/beatblitz" />
+       
+           <TextView
+        android:id="@+id/centerPoint"
+        android:text=""
+        android:layout_width="20dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+       
+        <ImageButton
+       		 android:id="@+id/maler_bild"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"    
+       		 android:background="@drawable/round_button"
+             android:layout_toLeftOf="@+id/centerPoint"
+       		 android:src="@drawable/maler" />
+         </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:paddingTop="5dp" >
+
+    <ImageButton
+        android:id="@+id/winker_bild"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/round_button"
+        android:src="@drawable/winker" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.64"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+</LinearLayout>
